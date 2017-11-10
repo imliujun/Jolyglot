@@ -16,12 +16,13 @@
 
 package io.victoralbertos.jolyglot;
 
-import java.lang.reflect.Type;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
+
+import java.lang.reflect.Type;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertNotNull;
@@ -32,6 +33,7 @@ public class ExampleTest {
   @DataPoint public static JolyglotGenerics gson = new GsonSpeaker();
   @DataPoint public static JolyglotGenerics jackson = new JacksonSpeaker();
   @DataPoint public static JolyglotGenerics moshi = new MoshiSpeaker();
+  @DataPoint public static JolyglotGenerics fastJson = new FastJsonSpeaker();
 
   @Theory
   @Test public void objectToJson(Jolyglot jolyglot) {
