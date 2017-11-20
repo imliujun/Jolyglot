@@ -16,7 +16,7 @@
 
 package io.victoralbertos.jolyglot;
 
-public final class FasrJsonSpeakerGenericsTest extends JolyglotGenericsTest {
+public final class FastJsonSpeakerGenericsTest extends JolyglotGenericsTest {
 
   @Override protected JolyglotGenerics jolyglot() {
     return new FastJsonSpeaker();

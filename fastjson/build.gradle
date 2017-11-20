@@ -36,7 +36,7 @@ dependencies {
   compile project(':api')
   compile project(':common')
 
-  compile 'com.alibaba:fastjson:1.1.65.android'
+  compile 'com.alibaba:fastjson:1.2.41'
 
   compileTestJava.dependsOn tasks.getByPath(':api:testClasses')
   testCompile files(project(':api').sourceSets.test.output.classesDir)
